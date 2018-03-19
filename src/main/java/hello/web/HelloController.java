@@ -16,4 +16,9 @@ public class HelloController {
         return helloService.welcome();
     }
 
+    @RequestMapping("/ivrit")
+    public String ivrit() {
+        return helloService.szia();
+    }
+
 }

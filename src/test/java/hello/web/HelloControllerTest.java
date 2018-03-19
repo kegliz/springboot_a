@@ -28,4 +28,10 @@ public class HelloControllerTest {
                 .andExpect(status().isOk())
                 .andExpect(content().string(equalTo("Greetings\n")));
     }
+    @Test
+    public void getIvrit() throws Exception {
+        mvc.perform(MockMvcRequestBuilders.get("/ivrit").accept(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())
+                .andExpect(content().string(equalTo("Shalom!")));
+    }
 }

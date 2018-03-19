@@ -22,4 +22,10 @@ public class HelloServiceTest {
     assertThat(helloService.welcome(), is("Greetings\n") );
   }
 
+  @Test
+  public void testSzia() {
+    System.out.println(helloService.szia());
+    assertThat(helloService.szia(), is("Shalom!") );
+  }
+
 }
