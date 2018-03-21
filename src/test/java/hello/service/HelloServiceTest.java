@@ -18,13 +18,11 @@ public class HelloServiceTest {
 
   @Test
   public void testWelcome() {
-    System.out.println(helloService.welcome());
     assertThat(helloService.welcome(), is("Greetings\n") );
   }
 
   @Test
   public void testSzia() {
-    System.out.println(helloService.szia());
     assertThat(helloService.szia(), is("Shalom!") );
   }
 

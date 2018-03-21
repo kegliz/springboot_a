@@ -9,6 +9,6 @@
 
 	                       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
 
-	<context:component-scan base-package="hello.service"/>
+	<context:component-scan base-package="hello.service, hello.dao"/>
 
 </beans>
